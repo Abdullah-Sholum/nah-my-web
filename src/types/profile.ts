@@ -1,27 +1,44 @@
+import type { MediaImage } from "./common";
+
 export interface SkillGroup {
   id: string;
   label: string;
   items: string[];
 }
 
-
-export interface AboutStorySection {
-  header: string;
+/** Satu bagian bercerita di halaman /about. */
+export interface AboutSectionContent {
+  /** Dipakai sebagai anchor: /about#how-i-see-problems */
+  id: string;
+  title: string;
+  /** Satu kalimat inti di bawah judul. */
+  lead: string;
   paragraphs: string[];
+  /** Kalimat pilihan yang ditampilkan lebih besar. Opsional. */
+  quote?: string;
+  /** Foto untuk bagian ini. Opsional: tidak tampil jika kosong. */
+  image?: MediaImage;
+  /** Tampilkan diagram alur kerja (about.workflow) di bagian ini. */
+  showWorkflow?: boolean;
 }
 
-
 export interface AboutContent {
-  /** Paragraf "About Me": tampil di Home dan di awal /about. */
+  /** Paragraf ringkas "About Me": tampil di Home. */
   summary: string[];
-  /** Paragraf tambahan yang personal/reflektif: hanya tampil di /about. */
-  story: AboutStorySection[];
+  /** Satu baris pengantar di bawah judul halaman /about. */
+  intro: string;
+  /** Bagian-bagian cerita di /about. */
+  sections: AboutSectionContent[];
+  /** Potret opsional di halaman /about. */
+  portrait?: MediaImage;
   education: string;
   fields: string[];
   interests: string[];
-  /** Alur cara bekerja, urut. */
+  /** Alur cara bekerja, urut (diagram di /about, bagian showWorkflow). */
   workflow: string[];
   currentFocus: string;
+  /** Slug project yang menjadi fokus saat ini. */
+  currentFocusSlug: string;
   frequentTech: string[];
 }
 
