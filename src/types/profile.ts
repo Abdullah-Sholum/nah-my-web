@@ -4,11 +4,18 @@ export interface SkillGroup {
   items: string[];
 }
 
+
+export interface AboutStorySection {
+  header: string;
+  paragraphs: string[];
+}
+
+
 export interface AboutContent {
   /** Paragraf "About Me": tampil di Home dan di awal /about. */
   summary: string[];
   /** Paragraf tambahan yang personal/reflektif: hanya tampil di /about. */
-  story: string[];
+  story: AboutStorySection[];
   education: string;
   fields: string[];
   interests: string[];
