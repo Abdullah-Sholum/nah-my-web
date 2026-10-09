@@ -10,7 +10,7 @@ export const research: Research[] = [
     order: 1,
     summary:
       "Perbandingan model deep learning ringan untuk klasifikasi penyakit paru.",
-    technologies: ["Python", "Deep Learning", "Computer Vision"],
+    technologies: ["Python", "Deep Learning", "CNN", "MobileNetV2", "EfficientNetV2"],
     // TODO: isi nama dataset, deskripsi, dan kelas
     dataset: undefined,
     preprocessing: ["Data Preprocessing"],

@@ -10,7 +10,7 @@ export function AboutPortrait({ image }: { image?: MediaImage }) {
   return (
     <Container className="pt-12">
       <figure className="max-w-xs space-y-2">
-        <div className="relative aspect-[4/5] overflow-hidden rounded-lg border bg-muted">
+        <div className="relative aspect-4/5 overflow-hidden rounded-lg border bg-muted">
           <Image
             src={image.src}
             alt={image.alt}

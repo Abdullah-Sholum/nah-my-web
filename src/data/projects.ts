@@ -61,8 +61,8 @@ export const projects: Project[] = [
     order: 2,
     shortDescription:
       "Sistem manajemen dan analisis keuangan pribadi dengan dataset personal yang dikumpulkan lebih dari 15 bulan.",
-    problem: "TODO: isi problem DjangoFinSight.",
-    solution: "TODO: isi solution DjangoFinSight.",
+    problem: "Pengelolaan keuangan pribadi terasa sulit karena banyaknya transaksi dan kategori yang harus diatur.",
+    solution: "Sistem manajemen keuangan pribadi berbasis web yang mengelola transaksi, kategori, dan analisis data keuangan.",
     technologies: ["Django", "Python", "CSV"],
     engineering: [
       "Data Processing",
@@ -77,6 +77,14 @@ export const projects: Project[] = [
       "Database",
       "Analytics",
       "Web Dashboard",
+    ],
+    timeline: [
+      { label: "Pencatatan Transaksi " },
+      { label: "Pengumpulan data" },
+      { label: "Pemrosesan data" },
+      { label: "Dataset utuh" },
+      { label: "Analisis Data" },
+      { label: "Dashboard" },
     ],
     // TODO: screenshot dashboard, visualisasi data, arsitektur sistem
     images: [],
@@ -113,8 +121,57 @@ export const projects: Project[] = [
       "Logging",
       "Low Resource Usage",
     ],
+    architecture: [
+      "Slider",
+      "Arduino Pro Micro",
+      "USB Hub",
+      "interface Com",
+      "Application",
+    ],
+    timeline: [
+      { label: "Prototype" },
+      { label: "Testing" },
+      { label: "Version 1" },
+      { label: "Make 3d Model" },
+      { label: "Version 2 3d model" },
+      { label: "Version 3 3d model" },
+      { label: "Desktop Application" },
+    ],
     // TODO: foto hardware, screenshot aplikasi WPF, diagram komunikasi
     images: [],
     links: [],
   },
+
+  {
+    slug: "smart-door-lock-iot",
+    title: "Smart Door Lock",
+    subtitle: "IoT-Based Access Control System",
+    categories: ["embedded", "iot"],
+    status: "completed",
+    featured: true,
+    order: 3,
+    shortDescription:
+      "Kunci pintu cerdas berbasis IoT untuk kontrol akses.",
+    problem:
+      "Sulitnya mengelola akses ke ruangan atau bangunan secara efisien dan aman.",
+    solution:
+      "Sistem kunci pintu cerdas yang menggunakan teknologi IoT untuk mengontrol akses dengan modul rc522 & pin, sidik jari, lewat smartphone.",
+    technologies: ["esp32", "c++", "mqtt", "application"],
+    hardware: ["esp32", "rc522", "r503", "wifi", "mqtt"],
+    software: [
+      "mqtt",
+      "Device Detection",
+      "Auto Reconnect",
+    ],
+    engineering: [
+      "Auto Reconnect",
+      "Device Status",
+      "user Management",
+      "Low Resource Usage",
+    ],
+    // TODO: foto hardware, screenshot aplikasi WPF, diagram komunikasi
+    images: [],
+    links: [],
+  },
+  
 ];
