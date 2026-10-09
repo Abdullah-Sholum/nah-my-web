@@ -1,5 +1,8 @@
 import type { SiteConfig } from "@/types";
 
+// Ditulis sekali, dipakai di halaman Contact dan footer.
+const EMAIL = "sholum1618@gmail.com"; // TODO: ganti dengan emailmu
+
 export const siteConfig: SiteConfig = {
   name: "Abdullah Sholum",
   role: "Software & IoT Developer",
@@ -8,7 +11,9 @@ export const siteConfig: SiteConfig = {
   tagline:
     "Membangun solusi dari masalah nyata, dari perangkat embedded sampai aplikasi software.",
   url: "https://example.com", // TODO: ganti dengan domain asli
-  email: "you@example.com", // TODO
+  email: EMAIL,
+  // TODO: ganti dengan nomormu. Hanya digit, format internasional (62...).
+  whatsapp: "6285608126017",
   nav: [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
@@ -27,6 +32,6 @@ export const siteConfig: SiteConfig = {
   social: [
     { label: "GitHub", href: "https://github.com/", icon: "github" }, // TODO
     { label: "LinkedIn", href: "https://linkedin.com/in/", icon: "linkedin" }, // TODO
-    { label: "Email", href: "mailto:you@example.com", icon: "mail" }, // TODO
+    { label: "Email", href: `mailto:${EMAIL}`, icon: "mail" },
   ],
 };
