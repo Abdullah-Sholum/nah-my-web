@@ -1,25 +1,32 @@
-export type DesignCategory = "3d" | "graphic" | "motion";
+import type { MediaImage } from "./common";
 
-export interface DesignItem {
-  slug: string;
-  title: string;
-  category: DesignCategory;
-  /** Contoh: "Logo", "Poster", "Catamaran Hull". */
-  subcategory?: string;
-  purpose: string;
-  dimensions?: string;
-  /** Proses desain. */
-  process?: string;
-  /** Metode pembuatan (mis. 3D print, vektor, render). */
-  method?: string;
-  tools: string[];
-  media: { type: "image" | "video"; src: string; alt: string };
-  year?: string;
-}
+/** Jenis karya. Menambah jenis = tambah di sini + satu entri di data/design.ts. */
+export type DesignCategory = "poster" | "3d" | "prototype";
+
+/** Bentuk gambar untuk satu jenis: poster tegak, lainnya mendatar. */
+export type DesignAspect = "portrait" | "landscape";
 
 export interface DesignCategoryMeta {
   id: DesignCategory;
   label: string;
   description: string;
-  topics: string[];
+  aspect: DesignAspect;
+}
+
+export interface DesignItem {
+  slug: string;
+  title: string;
+  category: DesignCategory;
+  summary: string;
+  /** Software yang dipakai, contoh: ["CorelDRAW", "Photoshop"]. */
+  software: string[];
+  // --- Opsional: tampil hanya jika diisi ---
+  year?: string;
+  dimensions?: string;
+  method?: string;
+  /**
+   * Minimal satu gambar (dipaksa oleh tipe tuple).
+   * Gambar pertama = gambar kartu di /design.
+   */
+  images: [MediaImage, ...MediaImage[]];
 }
