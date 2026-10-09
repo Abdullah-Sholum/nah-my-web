@@ -18,6 +18,11 @@ export interface SiteConfig {
   tagline: string;
   url: string;
   email: string;
+  /**
+   * Nomor WhatsApp: hanya digit, format internasional, tanpa "+", spasi, atau "0" di depan.
+   * Contoh: 0812-3456-7890 ditulis "6281234567890".
+   */
+  whatsapp: string;
   nav: NavItem[];
   social: SocialLink[];
 }
