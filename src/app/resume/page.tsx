@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { resume } from "@/data/resume";
 import { getAllExperience } from "@/lib/experience";
 import { getProjectBySlug } from "@/lib/projects";
-import { getResearchBySlug } from "@/lib/research";
+import { getResearchBySlug, paperCitation } from "@/lib/research";
 import { CertificationList } from "@/components/resume/certification-list";
 import { EducationList } from "@/components/resume/education-list";
 import {
@@ -33,7 +33,7 @@ export default function ResumePage() {
     (slug) => {
       const r = getResearchBySlug(slug);
       return r
-        ? [{ href: `/research/${r.slug}`, title: r.title, description: r.summary, kind: "Research" as const }]
+        ? [{ href: `/research#${r.slug}`, title: r.title, description: r.summary ?? paperCitation(r), kind: "Research" as const }]
         : [];
     },
   );
