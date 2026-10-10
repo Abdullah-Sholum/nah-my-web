@@ -1,0 +1,25 @@
+---
+title: "Fail-safe RC Boat: Motor Berhenti Saat Remote Putus"
+date: "2026-08"
+summary: "Saat komunikasi dengan remote terputus, motor berhenti, relay dimatikan, dan servo kembali ke posisi netral."
+category: "embedded"
+tags: ["fail-safe", "relay", "servo"]
+project: "rc-boat-trash-skimmer"
+published: true
+---
+
+## Problem
+
+Kapal yang dikendalikan lewat remote harus tetap aman ketika komunikasi dengan remote terputus.
+
+## Approach
+
+Fail-safe aktif sesaat setelah handshake antara remote dan kapal terputus. Pada saat itu tiga hal terjadi: motor berhenti, relay dimatikan, dan servo kembali ke posisi netral.
+
+## Result
+
+Saya menguji dengan memutus atau menonaktifkan remote, dan ketiganya bekerja sesuai rancangan.
+
+## Conclusion
+
+Putusnya komunikasi saya perlakukan sebagai kejadian yang pasti terjadi, sehingga kapal selalu kembali ke keadaan paling aman.

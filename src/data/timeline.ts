@@ -9,7 +9,7 @@ export const projectTimeline: TimelineEntry[] = [
     id: "smart-door-lock",
     title: "SmartDoorLockIOT",
     description:
-      "Solusi keamanan rumah yang terhubung ke internet, dengan akses PIN dan RFID serta fail-secure.",
+      "Solusi keamanan rumah yang terhubung ke internet, dengan akses RFID + PIN dan sidik jari serta fail-secure.",
   },
   { id: "rc-boat", title: "RC Boat", href: "/projects/rc-boat-trash-skimmer" },
   { id: "macropad", title: "Desktop Application / MacroPad", href: "/projects/macropad-audio-mixer" },

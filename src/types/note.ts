@@ -9,10 +9,13 @@ export type NoteCategory =
 /** Frontmatter di bagian atas setiap file .mdx di content/notes/. */
 export interface NoteFrontmatter {
   title: string;
-  date: string; // "YYYY-MM-DD"
+  /** Bulan dan tahun: "YYYY-MM" (mis. "2026-08"). */
+  date: string;
   summary: string;
   category: NoteCategory;
   tags?: string[];
+  /** Slug project terkait (opsional), mis. "macropad-audio-mixer". */
+  project?: string;
   /** Set false untuk menyembunyikan draft. Default: true. */
   published?: boolean;
 }

@@ -1,0 +1,24 @@
+---
+title: "Fail-secure SmartDoorLockIOT: Tetap Terkunci Saat Internet Putus"
+date: "2025-04"
+summary: "Saat internet putus, pintu otomatis terkunci dan hanya bisa dibuka dengan kombinasi RFID dan PIN, atau sidik jari."
+category: "iot"
+tags: ["fail-secure", "RFID", "PIN", "sidik jari"]
+published: true
+---
+
+## Problem
+
+Kunci pintu yang terhubung ke internet perlu tetap aman ketika jaringan gagal.
+
+## Approach
+
+Saat internet putus atau terjadi timeout dari jaringan, pintu otomatis terkunci. Dalam kondisi itu, pintu hanya bisa dibuka dengan kombinasi RFID dan PIN yang dipakai bersamaan, atau dengan sidik jari. Saya mengujinya dengan menonaktifkan Wi-Fi yang terhubung ke perangkat.
+
+## Result
+
+Pintu terkunci otomatis saat koneksi terputus. Saat listrik padam, sistem masih ditopang baterai cadangan.
+
+## Conclusion
+
+Fail-secure berarti tetap terkunci saat sistem gagal. Konsekuensinya, saat offline akses bergantung pada metode yang bekerja secara lokal tanpa internet.

@@ -1,0 +1,25 @@
+---
+title: "RAM MacroPad Naik hingga 99% dalam 9 Jam"
+date: "2026-05"
+summary: "Penggunaan RAM naik dari sekitar 20% ke 99% dalam kurang lebih sembilan jam, karena aplikasi LED yang terus melakukan polling."
+category: "programming"
+tags: ["memory", "polling", "MacroPad"]
+project: "macropad-audio-mixer"
+published: true
+---
+
+## Problem
+
+Dalam pemakaian normal, penggunaan RAM komputer naik dari sekitar 20% hingga 99% dalam kurang lebih sembilan jam sejak aplikasi berjalan.
+
+## Approach
+
+Aplikasi LED ternyata tetap terdaftar di MacroPad meskipun sudah saya hapus, seolah terdaftar ulang secara otomatis. Aplikasi itu terus melakukan polling. Saya lalu menghapus aplikasi LED dan aplikasi serupa secara permanen.
+
+## Result
+
+Setelah itu, penggunaan RAM bertahan di sekitar 20%.
+
+## Conclusion
+
+Masalah seperti ini baru terlihat dalam pemakaian berjam-jam, sehingga pengujian singkat tidak cukup untuk menangkapnya.
