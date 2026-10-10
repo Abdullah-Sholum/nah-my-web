@@ -1,5 +1,5 @@
 import { getFeaturedProjects } from "@/lib/projects";
-import { getFeaturedResearch } from "@/lib/research";
+import { getFeaturedResearch, paperCitation } from "@/lib/research";
 import { Section } from "@/components/shared/section";
 import { WorkCard } from "@/components/shared/work-card";
 
@@ -10,7 +10,7 @@ export function FeaturedWork() {
   return (
     <Section
       title="Featured Work"
-      description="Project dan research utama, ditulis sebagai case study."
+      description="Project dan research utama."
       action={{ label: "All projects", href: "/projects" }}
       className="border-t"
     >
@@ -32,12 +32,11 @@ export function FeaturedWork() {
           <WorkCard
             key={r.slug}
             kind="Research"
-            href={`/research/${r.slug}`}
+            href={`/research#${r.slug}`}
             title={r.title}
-            description={r.summary}
-            status={r.status}
-            tags={r.technologies}
-            image={r.images[0]}
+            description={r.summary ?? paperCitation(r)}
+            badge={r.sinta ? `SINTA ${r.sinta}` : undefined}
+            tags={r.technologies ?? []}
           />
         ))}
       </div>

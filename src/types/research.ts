@@ -1,43 +1,41 @@
-import type {
-  ContentSection,
-  ContentStatus,
-  ExternalLink,
-  MediaImage,
-} from "./common";
+/** Peringkat SINTA jurnal (1 = tertinggi). */
+export type SintaRank = 1 | 2 | 3 | 4 | 5 | 6;
 
-export type MetricKey = "accuracy" | "auc" | "precision" | "recall" | "f1";
+export type PaperStatus = "published" | "accepted" | "under-review";
 
-export interface ModelResult {
-  model: string;
-  /** Nilai 0-1. Isi hanya metrik yang tersedia. */
-  metrics: Partial<Record<MetricKey, number>>;
-}
-
-export interface Research {
+/** Satu artikel ilmiah. Peran kamu (penulis pertama / ke-n) dihitung dari urutan penulis. */
+export interface ResearchPaper {
   slug: string;
   title: string;
-  /** Contoh: "Research / AI" */
-  type: string;
-  status: ContentStatus;
-  featured: boolean;
-  order: number;
-  year?: string;
+  /** Daftar penulis, urutan dan ejaan persis seperti di jurnal. */
+  authors: string[];
+  /**
+   * Posisi namamu di `authors`, mulai dari 1.
+   * 1 = penulis pertama (tampil di "Lead Research"), lainnya = "Collaborations".
+   */
+  myPosition: number;
+  /** Nama jurnal / prosiding. */
+  venue: string;
+  year: string;
+  status: PaperStatus;
 
-  summary: string;
-  technologies: string[];
+  // --- Opsional: tampil hanya jika diisi ---
+  sinta?: SintaRank;
+  volume?: string;
+  issue?: string;
+  pages?: string;
+  summary?: string;
+  /** Satu kalimat peranmu. Sangat disarankan untuk artikel kolaborasi. */
+  contribution?: string;
+  /** Tag teknologi. */
+  technologies?: string[];
+  /** Tampil di Home (Featured Work). */
+  featured?: boolean;
 
-  dataset?: { name: string; description: string; classes?: string[] };
-  preprocessing: string[];
-  models: string[];
-  training?: string;
-  evaluation?: string;
-
-  /** Metrik yang dilaporkan (urutan = urutan kolom tabel). */
-  metrics: MetricKey[];
-  results: ModelResult[];
-  result?: string;
-
-  sections?: ContentSection[];
-  images: MediaImage[];
-  links: ExternalLink[];
+  /** DOI tanpa awalan, contoh "10.1234/abcd.2025.01". */
+  doi?: string;
+  /** Halaman artikel di situs jurnal (dipakai jika tidak ada DOI, atau menimpa DOI). */
+  url?: string;
+  /** PDF yang kamu unggah ke public/, contoh "/research/nama-file.pdf". */
+  pdf?: string;
 }

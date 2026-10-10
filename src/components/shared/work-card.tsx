@@ -17,7 +17,10 @@ export interface WorkCardProps {
   title: string;
   subtitle?: string;
   description: string;
-  status: ContentStatus;
+  /** Badge status (Project). Dipakai jika diisi. */
+  status?: ContentStatus;
+  /** Badge teks bebas (mis. "SINTA 2" untuk Research). Dipakai jika `status` kosong. */
+  badge?: string;
   tags: string[];
   kind: "Project" | "Research";
   image?: MediaImage;
@@ -35,6 +38,7 @@ export function WorkCard({
   subtitle,
   description,
   status,
+  badge,
   tags,
   kind,
   image,
@@ -62,7 +66,11 @@ export function WorkCard({
             <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
               {kind}
             </span>
-            <StatusBadge status={status} />
+            {status ? (
+              <StatusBadge status={status} />
+            ) : badge ? (
+              <Badge variant="secondary">{badge}</Badge>
+            ) : null}
           </div>
           <CardTitle className="leading-snug">{title}</CardTitle>
           {subtitle && <CardDescription>{subtitle}</CardDescription>}

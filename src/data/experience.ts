@@ -13,7 +13,7 @@ export const experience: ExperienceItem[] = [
     highlights: [
       "Membuat animasi untuk video pembelajaran.",
       "Membangun SmartDoorLockIOT, solusi keamanan rumah yang terhubung ke internet.",
-      "Mengamankan akses dengan PIN dan RFID, dilengkapi mekanisme fail-secure.",
+      "Mengamankan akses dengan kombinasi RFID dan PIN serta sidik jari, dilengkapi mekanisme fail-secure.",
     ],
   },
   {

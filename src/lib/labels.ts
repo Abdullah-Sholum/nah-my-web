@@ -1,4 +1,4 @@
-import type { ProjectCategory } from "@/types";
+import type { NoteCategory, ProjectCategory } from "@/types";
 
 export const projectCategoryLabels: Record<ProjectCategory, string> = {
   iot: "IoT",
@@ -7,4 +7,13 @@ export const projectCategoryLabels: Record<ProjectCategory, string> = {
   desktop: "Desktop",
   web: "Web",
   data: "Data",
+};
+
+export const noteCategoryLabels: Record<NoteCategory, string> = {
+  electronics: "Electronics",
+  programming: "Programming",
+  iot: "IoT",
+  embedded: "Embedded",
+  "ai-data": "AI & Data",
+  experiments: "Experiments",
 };
