@@ -54,15 +54,15 @@ export const projects: Project[] = [
   {
     slug: "django-finsight",
     title: "DjangoFinSight",
-    subtitle: "Personal finance management & analysis system",
+    subtitle: "Prototype dashboard analisis pengeluaran pribadi",
     categories: ["software", "web", "data"],
-    status: "ongoing",
+    status: "prototype", 
     featured: true,
     order: 2,
     shortDescription:
-      "Sistem manajemen dan analisis keuangan pribadi dengan dataset personal yang dikumpulkan lebih dari 15 bulan.",
-    problem: "Pengelolaan keuangan pribadi terasa sulit karena banyaknya transaksi dan kategori yang harus diatur.",
-    solution: "Sistem manajemen keuangan pribadi berbasis web yang mengelola transaksi, kategori, dan analisis data keuangan.",
+      "Prototype dashboard untuk menganalisis pengeluaran pribadi dari dataset yang dikumpulkan lebih dari 15 bulan.",
+    problem:  "Saya ingin lebih memahami pola dan insight dari pengeluaran saya sendiri. Data pengeluaran tercatat per bulan, sehingga sulit dilihat sebagai satu gambaran utuh.",
+    solution:  "Data pengeluaran bulanan digabungkan menjadi satu dataset, lalu diberi kategori agar arah pengeluaran lebih jelas. Dataset itu kemudian diproses menjadi insight, seperti rata-rata pengeluaran harian dan mingguan, pengeluaran terbesar dan terkecil, serta hari hemat. Hasilnya ditampilkan dalam dashboard agar pengeluaran bisa dilihat secara visual.",
     technologies: ["Django", "Python", "CSV"],
     engineering: [
       "Data Processing",
@@ -86,6 +86,23 @@ export const projects: Project[] = [
       { label: "Analisis Data" },
       { label: "Dashboard" },
     ],
+        sections: [
+      {
+        title: "Insight yang dihasilkan",
+        // tambahkan insight lain di sini bila ada ("dll." di ceritamu)
+        items: [
+          "Rata-rata pengeluaran harian",
+          "Rata-rata pengeluaran mingguan",
+          "Pengeluaran terbesar",
+          "Pengeluaran paling sedikit",
+          "Hari hemat",
+        ],
+      },
+    ],
+    futureDevelopment: [
+      "Membangun sistem penuh dengan Next.js, dengan versi Django ini sebagai prototype awalnya.",
+    ],
+    
     // TODO: screenshot dashboard, visualisasi data, arsitektur sistem
     images: [],
     links: [],

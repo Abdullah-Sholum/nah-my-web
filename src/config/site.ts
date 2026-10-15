@@ -18,7 +18,7 @@ export const siteConfig: SiteConfig = {
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
     { label: "Projects", href: "/projects" },
-    { label: "Design", href: "/design" },
+    // { label: "Design", href: "/design" },
     {
       label: "Notes",
       children: [
