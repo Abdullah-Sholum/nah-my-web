@@ -1,7 +1,7 @@
 import type { SiteConfig } from "@/types";
 
 // Ditulis sekali, dipakai di halaman Contact dan footer.
-const EMAIL = "sholum1618@gmail.com"; // TODO: ganti dengan emailmu
+const EMAIL = "sholumaz@gmail.com"; // TODO: ganti dengan emailmu
 
 export const siteConfig: SiteConfig = {
   name: "Abdullah Sholum",
@@ -30,8 +30,8 @@ export const siteConfig: SiteConfig = {
     { label: "Contact", href: "/contact" },
   ],
   social: [
-    { label: "GitHub", href: "https://github.com/", icon: "github" }, // TODO
-    { label: "LinkedIn", href: "https://linkedin.com/in/", icon: "linkedin" }, // TODO
+    { label: "GitHub", href: "https://github.com/Abdullah-Sholum", icon: "github" }, // TODO
+    { label: "LinkedIn", href: "http://linkedin.com/in/abdullah-sholum-bba6541b5/?isSelfProfile=true", icon: "linkedin" }, // TODO
     { label: "Email", href: `mailto:${EMAIL}`, icon: "mail" },
   ],
 };

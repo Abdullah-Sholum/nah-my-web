@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronDown, Menu } from "lucide-react";
+import Image from "next/image";
 
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
@@ -136,15 +137,23 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <Container className="flex h-14 items-center justify-between">
-        <Link href="/" className="text-sm font-semibold tracking-tight">
-          {siteConfig.name}
+        <Link href="/" className="text-lg font-semibold tracking-tight">
+          {/* {siteConfig.name} */} 
+          <Image
+            src="/images/logoweb.svg"
+            alt=""
+            width={150}
+            height={150}
+            priority
+            unoptimized
+          />
         </Link>
         <div className="flex items-center gap-1">
           <DesktopNav pathname={pathname} />
           <ThemeToggle />
           <MobileNav pathname={pathname} />
         </div>
-      </Container>
+      </Container>  
     </header>
   );
 }

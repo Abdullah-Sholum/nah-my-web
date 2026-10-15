@@ -125,7 +125,7 @@ export const projects: Project[] = [
       "Slider",
       "Arduino Pro Micro",
       "USB Hub",
-      "interface Com",
+      "Interface COM",
       "Application",
     ],
     timeline: [

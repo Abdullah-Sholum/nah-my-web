@@ -10,22 +10,22 @@ export const research: ResearchPaper[] = [
   // ---------- Lead Research (penulis pertama) ----------
   {
     slug: "lightweight-dl-lung-disease",
-    title: "Lightweight Deep Learning Models for Lung Disease Classification",
+    title: "Lightweight Deep Learning Models for Lung Disease Classification Using Chest X-ray Images",
     // TODO: ganti dengan daftar penulis asli, sesuai urutan di jurnal.
-    authors: ["Abdullah Sholum", "Penulis Lain (TODO)"],
+    authors: ["Abdullah Sholum(1*)", "Aji Prasetya Wibawa(2)", "Ardhana Putra Agustavada(3)", "Dafa Fadhilah Hilmi(4)", "Felix Andika Dwiyanto(5)"],
     myPosition: 1,
-    venue: "TODO: nama jurnal",
-    year: "TODO",
+    venue: "JURNAL ILKOM",
+    year: "2026",
     status: "published", // ASUMSI: sudah terbit. Ubah jika "accepted" / "under-review".
     sinta: 2,
     // TODO: ringkasan 2 kalimat tentang temuan utama
     summary:
       "Perbandingan model deep learning ringan (CNN, MobileNetV2, EfficientNetV2) untuk klasifikasi penyakit paru.",
-    technologies: ["Python", "Deep Learning", "Computer Vision"],
+    technologies: ["Python", "Deep Learning", "CNNN", "MobileNetV2", "EfficientNetV2"],
     featured: true,
     // DUMMY: tautan dan PDF contoh. Ganti dengan yang asli.
-    url: "https://example.com/dummy-paper",
-    pdf: "/research/dummy-paper.pdf",
+    url: "https://jurnal.fikom.umi.ac.id/index.php/ILKOM/article/view/3351",
+    pdf: "/research/paper-lung.pdf",
   },
 
   // ---------- Collaborations (penulis ke-n) ----------
