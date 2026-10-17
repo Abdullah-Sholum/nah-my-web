@@ -59,7 +59,6 @@ export const about: AboutContent = {
       title: "Building Things That Matter",
       lead: "Teknologi sebagai alat untuk menyelesaikan masalah nyata.",
       paragraphs: [
-        // TODO (opsional): tambahkan satu kalimat konkret tentang apa yang kamu lihat di kolam.
         "Saya semakin tertarik pada proyek yang berhubungan dengan masalah nyata. Salah satu contohnya adalah pengembangan sistem catamaran trash skimmer untuk membantu pengelolaan kolam budidaya ikan. Proyek itu tidak bermula dari keinginan sekadar membuat sebuah RC boat, melainkan dari masalah yang benar-benar saya lihat dan alami.",
         "Hal itu mengubah cara saya memandang sebuah proyek. Teknologi menjadi lebih menarik ketika memiliki alasan untuk dibuat. Sebuah ESP32, motor, conveyor, atau aplikasi tidak berdiri sendiri; semuanya menjadi bagian dari sebuah solusi. Saya ingin terus belajar membuat sesuatu dengan cara itu: memahami masalah lebih dulu, lalu menggunakan teknologi sebagai alat untuk menyelesaikannya.",
       ],
@@ -76,7 +75,7 @@ export const about: AboutContent = {
     },
   ],
 
-  // portrait: { src: "/about/portrait.webp", alt: "Potret Abdullah Sholum" },
+  portrait: { src: "/about/potrait-sholum.jpeg", alt: "Potret Abdullah Sholum" },
 
   education: "Teknik Informatika",
   fields: ["Software Development", "IoT", "Embedded Systems", "Digital Design"],

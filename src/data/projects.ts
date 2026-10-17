@@ -47,8 +47,17 @@ export const projects: Project[] = [
       { label: "Catamaran Hull" },
       { label: "Conveyor Design" },
     ],
-    // TODO: foto prototype, visual hull, screenshot desain 3D, schematic, foto pengujian
-    images: [],
+    images: [
+      { src: "/project/rc-boat/foto-boat-depan.jpeg", alt: "RC boat catamaran trash skimmer dilihat dari depan", caption: "Kapal dari depan" },
+      { src: "/project/rc-boat/foto-boat-buritan.jpeg", alt: "RC boat catamaran trash skimmer dilihat dari buritan", caption: "Kapal dari buritan" },
+      { src: "/project/rc-boat/foto-boat-atas-beserta-enclosure.jpeg", alt: "RC boat dilihat dari atas dengan enclosure elektronik", caption: "Dari atas, dengan enclosure elektronik" },
+      { src: "/project/rc-boat/foto-render-boat-depan.jpg", alt: "Render 3D kapal dari depan", caption: "Render dari depan" },
+      { src: "/project/rc-boat/foto-render-boat-samping-belakang.jpg", alt: "Render 3D kapal dari samping belakang", caption: "Render dari samping belakang" },
+      { src: "/project/rc-boat/foto-render-boat-terbongkar.jpg", alt: "Render 3D kapal dalam kondisi terbongkar", caption: "Render kapal terbongkar" },
+      { src: "/project/rc-boat/foto-remote-depan.jpeg", alt: "Remote pengendali kapal dilihat dari depan", caption: "Remote, tampak depan" },
+      { src: "/project/rc-boat/foto-remote-belakang.jpeg", alt: "Remote pengendali kapal dilihat dari belakang", caption: "Remote, tampak belakang" },
+      { src: "/project/rc-boat/foto-schematic.jpg", alt: "Skema rangkaian elektronik kapal", caption: "Skema rangkaian" },
+    ],
     links: [],
   },
   {
@@ -102,9 +111,11 @@ export const projects: Project[] = [
     futureDevelopment: [
       "Membangun sistem penuh dengan Next.js, dengan versi Django ini sebagai prototype awalnya.",
     ],
-    
-    // TODO: screenshot dashboard, visualisasi data, arsitektur sistem
-    images: [],
+    images: [
+      { src: "/project/finsight/foto-web.jpg", alt: "foto dashboard", caption: "foto dashboard" },
+      { src: "/project/finsight/foto-kode.jpg", alt: "foto kode proprocessing", caption: "foto kode preprocessing" },
+
+    ],
     links: [],
   },
   {
@@ -154,8 +165,14 @@ export const projects: Project[] = [
       { label: "Version 3 3d model" },
       { label: "Desktop Application" },
     ],
-    // TODO: foto hardware, screenshot aplikasi WPF, diagram komunikasi
-    images: [],
+        images: [
+      { src: "/project/macropad/foto-perangkat.jpeg", alt: "Perangkat MacroPad dilihat utuh", caption: "MacroPad" },
+      { src: "/project/macropad/foto-panel.jpeg", alt: "Panel MacroPad", caption: "Panel" },
+      { src: "/project/macropad/foto-render.jpg", alt: "Render desain MacroPad", caption: "Render desain" },
+      { src: "/project/macropad/foto-pcb.jpeg", alt: "PCB MacroPad", caption: "PCB" },
+      { src: "/project/macropad/foto-microcontroller.jpeg", alt: "Mikrokontroler MacroPad", caption: "Mikrokontroler" },
+      { src: "/project/macropad/foto-aplikasi.jpg", alt: "Aplikasi pendamping MacroPad", caption: "Aplikasi desktop (WPF)" },
+    ],
     links: [],
   },
 
@@ -187,8 +204,13 @@ export const projects: Project[] = [
       "Low Resource Usage",
     ],
     // TODO: foto hardware, screenshot aplikasi WPF, diagram komunikasi
-    images: [],
+    images: [
+      { src: "/project/smartdoorlock/foto-bersama-produk.jpeg", alt: "Perangkat dilihat utuh", caption: "Foto Bersama Produk" },
+      { src: "/project/smartdoorlock/foto-perakitan-1.jpeg", alt: "Perakitan 1", caption: "Perakitan 1" },
+      { src: "/project/smartdoorlock/foto-perakitan-2.jpeg", alt: "Perakitan 2", caption: "Perakitan 2" },
+      { src: "/project/smartdoorlock/foto-pengujian-pin-rfid.jpeg", alt: "Pengujian PIN RFID", caption: "Pengujian PIN RFID" },
+      { src: "/project/smartdoorlock/foto-bagian-dalam-jadi.jpeg", alt: "Bagian Dalam Jadi", caption: "Bagian Dalam Jadi" },
+    ],
     links: [],
   },
-  
 ];

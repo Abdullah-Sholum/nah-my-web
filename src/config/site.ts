@@ -7,12 +7,10 @@ export const siteConfig: SiteConfig = {
   name: "Abdullah Sholum",
   role: "Software & IoT Developer",
   supportingIdentity: "IT Developer · IoT · Embedded Systems",
-  // TODO: draft, silakan ubah sesuai gayamu.
   tagline:
     "Membangun solusi dari masalah nyata, dari perangkat embedded sampai aplikasi software.",
-  url: "https://example.com", // TODO: ganti dengan domain asli
+  url: "https://example.com", 
   email: EMAIL,
-  // TODO: ganti dengan nomormu. Hanya digit, format internasional (62...).
   whatsapp: "6285608126017",
   nav: [
     { label: "Home", href: "/" },
@@ -30,8 +28,8 @@ export const siteConfig: SiteConfig = {
     { label: "Contact", href: "/contact" },
   ],
   social: [
-    { label: "GitHub", href: "https://github.com/Abdullah-Sholum", icon: "github" }, // TODO
-    { label: "LinkedIn", href: "http://linkedin.com/in/abdullah-sholum-bba6541b5/?isSelfProfile=true", icon: "linkedin" }, // TODO
+    { label: "GitHub", href: "https://github.com/Abdullah-Sholum", icon: "github" }, 
+    { label: "LinkedIn", href: "http://linkedin.com/in/abdullah-sholum-bba6541b5/?isSelfProfile=true", icon: "linkedin" }, 
     { label: "Email", href: `mailto:${EMAIL}`, icon: "mail" },
   ],
 };

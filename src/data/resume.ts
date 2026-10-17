@@ -2,7 +2,7 @@ import type { ResumeContent } from "@/types";
 
 export const resume: ResumeContent = {
   cvUrl: "/cv/Abdullah-Sholum-CV.pdf", // TODO: taruh file di public/cv/
-  summary: "Universitas Negri  Malang, Teknik Informatika, 2025. Saat ini fokus mengembangkan sistem IoT dan aplikasi software untuk solusi masalah nyata.",
+  summary: "Universitas Negeri  Malang, Teknik Informatika, 2025. Saat ini fokus mengembangkan sistem IoT dan aplikasi software untuk solusi masalah nyata.",
   education: [
     { degree: "Teknik Informatika", institution: "Universitas Negri Malang" },
   ],

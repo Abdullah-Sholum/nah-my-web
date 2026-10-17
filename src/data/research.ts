@@ -16,14 +16,12 @@ export const research: ResearchPaper[] = [
     myPosition: 1,
     venue: "ILKOM",
     year: "2026",
-    status: "published", // ASUMSI: sudah terbit. Ubah jika "accepted" / "under-review".
+    status: "published",
     sinta: 2,
-    // TODO: ringkasan 2 kalimat tentang temuan utama
     summary:
       "Perbandingan model deep learning ringan (CNN, MobileNetV2, EfficientNetV2) untuk klasifikasi penyakit paru.",
     technologies: ["Python", "Deep Learning", "CNNN", "MobileNetV2", "EfficientNetV2"],
     featured: true,
-    // DUMMY: tautan dan PDF contoh. Ganti dengan yang asli.
     url: "https://jurnal.fikom.umi.ac.id/index.php/ILKOM/article/view/3351",
     pdf: "/research/paper-lung.pdf",
   },
@@ -57,17 +55,5 @@ export const research: ResearchPaper[] = [
     issue: "2",
     contribution: "Penulisan Bagian Introduction dan Conclusion",
     url: "https://doi.org/10.35882/ijeeemi.v8i2.325",
-    // pdf: "/research/dummy-paper.pdf",
   },
-  // {
-  //   slug: "dummy-collab-3",
-  //   title: "Dummy Paper C: Contoh Artikel yang Sudah Diterima",
-  //   authors: ["Penulis Satu", "Penulis Dua", "Penulis Tiga", "Penulis Empat", "Abdullah Sholum"],
-  //   myPosition: 5,
-  //   venue: "Jurnal Dummy Tiga",
-  //   year: "2025",
-  //   status: "accepted",
-  //   sinta: 2,
-  //   // sengaja tanpa tautan, kontribusi, dan PDF: untuk melihat tampilan minimal
-  // },
 ];

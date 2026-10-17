@@ -22,7 +22,7 @@ export default function AboutPage() {
         <AboutJumpNav sections={about.sections} />
       </PageHeader>
 
-      <AboutPortrait image={about.portrait} />
+      {/* <AboutPortrait image={about.portrait} /> */}
 
       {about.sections.map((section, i) => (
         <AboutSection
